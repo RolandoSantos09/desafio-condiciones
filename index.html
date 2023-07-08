@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condiciones</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- tarea 1 -->
+    <div class="container">
+        <img id="imagen1" src="assets/images/goku.png" onclick="toggleBorder()">
+    </div>
+
+    <!-- tarea 2 -->
+    <div id="container2">
+        <h1>Pedido de Stickers</h1>
+
+        <div class="stickers">
+            <div class="sticker">
+                <img src="assets/images/gatocomilon.png" alt="Sticker 1">
+                <input type="number" id="sticker1Qty" min="0" max="10">
+            </div>
+
+            <div class="sticker">
+                <img src="assets/images/gatocumpleañero.png" alt="Sticker 2">
+                <input type="number" id="sticker2Qty" min="0" max="10">
+            </div>
+
+            <div class="sticker">
+                <img src="assets/images/gatofiestero.png" alt="Sticker 3">
+                <input type="number" id="sticker3Qty" min="0" max="10">
+            </div>
+        </div>
+
+        <button onclick="calcularTotal()">Calcular Total</button>
+        <p id="resultado"></p>
+    </div>
+
+    <!-- tarea 3 -->
+    <div class="container3">
+        <h1>Ingresa tu Contraseña</h1>
+        <div class="contraseña">
+            <select id="select1">
+                <option value="1">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <!-- Otras opciones del 1 al 9 -->
+            </select>
+            <select id="select2">
+                <option value="1">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <!-- Otras opciones del 1 al 9 -->
+            </select>
+            <select id="select3">
+                <option value="1">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <!-- Otras opciones del 1 al 9 -->
+            </select>
+        </div>
+
+        <button onclick="verificarPassword()">Ingresar</button>
+        <p id="respuesta"></p>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
